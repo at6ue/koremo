@@ -1,0 +1,94 @@
+.container {
+  display: grid;
+  grid-template-columns: 104px 1fr;
+  column-gap: 20px;
+  padding: 16px 6px;
+}
+
+.image {
+  display: grid;
+  grid-template-rows: 104px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.noImage {
+  background-color: gray;
+}
+
+.descriptions {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.itemName {
+  font-size: 13px;
+  font-weight: normal;
+  margin-block: 0 8px;
+  max-height: 37px;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.price {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  column-gap: 5px;
+  color: #bf0000;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.itemPrice {
+  font-size: 20px;
+}
+
+.priceUnit {
+  font-weight: normal;
+}
+
+.pointRate {
+  color: #bf0000;
+}
+
+.review {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  column-gap: 2px;
+  margin-block-start: 4px;
+}
+
+.reviewCount {
+  color: #717171;
+}
+
+.reviewAverage {
+  color: #f2ab00;
+}
+
+.shopName {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  column-gap: 0.2em;
+  color: #0078b5;
+  margin-block-start: 8px;
+}
+.shopName > div {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

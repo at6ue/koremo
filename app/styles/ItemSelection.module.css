@@ -1,0 +1,32 @@
+.page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 10px 10px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.summary {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.summary > div {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  column-gap: 5px;
+  align-items: baseline;
+}
+
+.summary > div > * {
+  white-space: nowrap;
+}
+.summary > div > :first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

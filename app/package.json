@@ -1,0 +1,47 @@
+{
+  "name": "koremo_app",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "stage": "npx http-server out",
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.18",
+    "@mui/material": "^5.15.18",
+    "msw": "^2.3.1",
+    "next": "^14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.51.4",
+    "swr": "^2.2.5",
+    "valibot": "^0.35.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.1.1",
+    "@storybook/addon-interactions": "^8.1.1",
+    "@storybook/addon-links": "^8.1.1",
+    "@storybook/addon-onboarding": "^8.1.1",
+    "@storybook/blocks": "^8.1.1",
+    "@storybook/nextjs": "^8.1.1",
+    "@storybook/react": "^8.1.1",
+    "@storybook/test": "^8.1.6",
+    "@types/node": "^20.14.2",
+    "@types/react": "^18.3.3",
+    "eslint": "8.44.0",
+    "eslint-config-next": "^14.2.3",
+    "eslint-plugin-storybook": "^0.8.0",
+    "storybook": "^8.1.1",
+    "typescript": "^5.4.5"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  }
+}

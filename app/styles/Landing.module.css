@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.title {
+  text-align: center;
+  padding: 5px;
+}
+
+.title strong {
+  margin-inline: 0.2em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.form > * {
+  width: 100%;
+  max-width: 640px;
+}
+
+.keyword {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.wishlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-block: 15px;
+  text-decoration: none;
+  color: #bf0000;
+}

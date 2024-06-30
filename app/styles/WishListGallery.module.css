@@ -1,0 +1,21 @@
+.container {
+  flex: 1;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  column-gap: 12px;
+}
+
+.content {
+  scroll-snap-align: start;
+  width: 90svw;
+  max-width: 640px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.scrollable_y {
+  overflow-y: auto;
+}

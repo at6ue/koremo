@@ -1,0 +1,9 @@
+.search {
+  display: grid;
+  grid-template-columns: 1fr 5em;
+  align-items: center;
+}
+
+.Button {
+  justify-self: center;
+}

@@ -1,0 +1,65 @@
+.itemContainer {
+  display: grid;
+  grid-template:
+    "image name name"
+    "image price quantity"
+    / 75px 1fr auto;
+  column-gap: 8px;
+  font-size: 12px;
+}
+
+.image {
+  grid-area: image;
+}
+
+.noImage {
+  background-color: gray;
+}
+
+.itemName {
+  grid-area: name;
+  margin-right: 1.6em;
+  max-height: 36px;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #0078b5;
+  text-decoration: none;
+}
+
+.price {
+  grid-area: price;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+
+.itemPrice {
+  margin-left: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.postage {
+  font-size: 10px;
+}
+
+.postageIncluded {
+  font-size: 12px;
+  font-weight: bold;
+  color: #bf0000;
+}
+
+.pointRate {
+  color: #bf0000;
+}

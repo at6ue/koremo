@@ -1,0 +1,23 @@
+{
+  "name": "koremo_infra",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "bin": {
+    "cdk": "bin/cdk.js"
+  },
+  "scripts": {
+    "diff": "cdk diff",
+    "synth": "cdk synth",
+    "deploy:all": "cdk deploy --all",
+    "deploy": "cdk deploy DeployStack"
+  },
+  "devDependencies": {
+    "aws-cdk": "^2.84.0"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.84.0",
+    "constructs": "^10.0.0",
+    "dotenv": "^16.1.3"
+  }
+}

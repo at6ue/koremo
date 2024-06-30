@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+  justify-content: space-between;
+  padding: 10px;
+  row-gap: 10px;
+}
